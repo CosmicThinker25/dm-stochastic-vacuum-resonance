@@ -2,31 +2,32 @@
 
 > Repository for the manuscript and materials exploring dark matter as an effective, band-limited stochastic response of the quantum vacuum, modeled via a causal, passive susceptibility `chi(omega,k)` (Kramers–Kronig, Im{chi} ≤ 0), without introducing new propagating particles.
 
----
-
 ## TL;DR
+- **Idea:** DM phenomenology emerges from a stochastic resonance of the vacuum (memory kernel `chi(omega,k)`), not from a standalone particle.  
+- **Math backbone:** in-in (Schwinger–Keldysh) / **Einstein–Langevin** → explicit route to an **effective density** `rho_eff`.  
+- **Stability:** lower-half-plane poles, spectral positivity, **off-band** criteria.  
+- **Falsifiable predictions:** (1) **weak-lensing** trispectrum (band-limited, folded/parallelogram), (2) **stochastic GW** bounds `Omega_GW(f)`.  
+- **2025 nulls integrated:** Euclid QR1, JWST Bullet (→ `tau_c ≤ 0.10 Myr`), LVK O4. Lab-Hz channel removed.
 
-- **Idea:** DM phenomenology emerges from a **stochastic resonance** of the vacuum (memory kernel `chi(omega,k)`), not from a standalone particle.  
-- **Math backbone:** in-in (Schwinger–Keldysh) / **Einstein–Langevin** → explicit route to an **effective density** `rho_eff` expanded in a filtered field `zeta_R`.  
-- **Stability:** poles in the lower half-plane, spectral positivity, and **off-band** criteria that avoid parametric instabilities.  
-- **Falsifiable predictions (active channels):**  
-  1) **Weak-lensing trispectrum** (band-limited, folded/parallelogram template)  
-  2) **Stochastic GW** bounds `Omega_GW(f)` via a causal kernel `J(f; tau_c)`  
-- **2025 nulls integrated:** **Euclid QR1** (no WL 4-pt band), **JWST Bullet** (no offset → `tau_c ≤ 0.10 Myr`), **LVK O4** (tighter SGWB limits). The lab-Hz channel is **removed** (out of band in the allowed regime).
+## Files
+- `DM_SVR_FINAL_printsafe.pdf` (print-safe; ASCII-only, standard fonts).  
+  > Recommended for sharing if viewers have font issues.
 
----
+## Abstract (short)
+We present a falsifiable, effective description of dark matter as a **stochastic resonance** of the quantum vacuum. A **causal, passive** susceptibility `chi(omega,k)` yields an **effective density** `rho_eff` via the in-in/Einstein–Langevin formalism. On/off-band **stability** criteria are derived. 2025 nulls (Euclid QR1, JWST Bullet, LVK O4) are integrated as constraints on `(ell_c, tau_c, f_res)`, removing the lab-Hz prediction (`tau_c ≤ 0.10 Myr`).
 
-## Repository layout
+## Roadmap
+- [x] Full model write-up, stability on/off band  
+- [x] Integration of 2025 nulls → priors + constraints  
+- [ ] Pipeline-based contours (Euclid/LSST, LVK/NANOGrav)  
+- [ ] Data-driven figures
 
-```text
-/pdf/
-  DM_Stochastic_Vacuum_Resonance_v1.2_copilot_upgrades.pdf
-  DM_SVR_FINAL_printsafe.pdf              # ASCII-only, standard fonts, no glyph issues
-
-/tex/                                     # (optional) LaTeX source and figures
-/docx/                                    # (optional) Editable .docx
-/scripts/                                  # (optional) Minimal scripts for SNR, J(f;tau_c), constraint map
-
-README.md
-LICENSE                                   # recommended: CC BY 4.0 (text) + MIT (code)
-CITATION.cff
+## How to cite
+```bibtex
+@misc{CosmicThinker_DM_SVR_2025,
+  author  = {CosmicThinker},
+  title   = {Dark Matter as a Stochastic Resonance of the Quantum Vacuum},
+  year    = {2025},
+  version = {v1.2},
+  url     = {https://github.com/CosmicThinker25/dm-stochastic-vacuum-resonance}
+}
